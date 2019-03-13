@@ -110,11 +110,10 @@ public class TechJobs {
 
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
-        for (HashMap<String, String> job ; someJobs){
-            Integer i = 0;
-            for ( : job){
+            for (HashMap<String, String> job : someJobs){
 
-                i++
+                for (HashMap.Entry<String, String> entry: job.entrySet()){
+                    System.out.println(entry.getKey() + ": " + entry.getValue());
             }
         }
     }
